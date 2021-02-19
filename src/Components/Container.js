@@ -10,6 +10,14 @@ export default class Container extends Component {
     this.state = {
       movies: [],
       active: false,
+      videos: [
+        "SDnYMbYB-nU",
+        "fnaojlfdUbs",
+        "iVAgTiBrrDA",
+        "hYcw5ksV8YQ",
+        "V75dMMIW2B4",
+        "r5X-hFf6Bwo",
+      ],
     };
     this.fetchData = this.fetchData.bind(this);
     this.changeActive = this.changeActive.bind(this);
@@ -38,17 +46,20 @@ export default class Container extends Component {
   render() {
     return (
       <div className="Container">
-        {this.state.movies.slice(2, this.state.movies.length).map((movie) => {
-          return (
-            <Movies
-              name={movie.name}
-              runtime={movie.runtimeInMinutes}
-              score={movie.rottenTomatesScore}
-              budget={movie.budgetInMillions}
-              revenue={movie.boxOfficeRevenueInMillions}
-            />
-          );
-        })}
+        {this.state.movies
+          .slice(2, this.state.movies.length)
+          .map((movie, i) => {
+            return (
+              <Movies
+                name={movie.name}
+                runtime={movie.runtimeInMinutes}
+                score={movie.rottenTomatesScore}
+                budget={movie.budgetInMillions}
+                revenue={movie.boxOfficeRevenueInMillions}
+                image={this.state.videos[i]}
+              />
+            );
+          })}
       </div>
     );
   }
