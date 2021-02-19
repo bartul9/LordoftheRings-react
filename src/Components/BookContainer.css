@@ -1,0 +1,22 @@
+.BookContainer {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  transition: 1s;
+  background-image: url(https://i.imgur.com/1vFIS22.jpg);
+  background-size: cover;
+  background-position: center;
+  /* background: rgb(226, 169, 63);
+  background: rgb(89, 213, 112);
+  background: linear-gradient(
+    123deg,
+    rgba(89, 213, 112, 0.5) 0%,
+    rgba(22, 92, 35, 0.5) 100%
+  ); */
+
+  /* background-color: rgb(226, 169, 63, 0.2); */
+}
