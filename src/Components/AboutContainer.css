@@ -1,0 +1,7 @@
+.AboutContainer {
+  min-height: 100vh;
+  width: 100vw;
+  background-image: url(/src/Components/argonath.jpg);
+  background-size: cover;
+  background-position: left;
+}
