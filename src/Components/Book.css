@@ -1,0 +1,19 @@
+.Book {
+  width: 275px;
+  height: 410px;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+  color: white;
+  opacity: 0.9;
+  transition: 300ms;
+  padding: 5px;
+}
+
+.Book h3 {
+  color: rgb(226, 169, 63);
+}
+
+.Book h6 {
+  color: rgb(226, 169, 63);
+}
