@@ -1,6 +1,5 @@
 .Container {
   width: 100vw;
-  border: 1px solid black;
   min-height: 100vh;
   background-image: url(https://wallpapercave.com/wp/wp2097028.jpg);
   background-size: cover;
@@ -24,4 +23,11 @@
 .Container-message button {
   position: relative;
   top: -250px;
+}
+
+@media (max-width: 700px) {
+  .Container {
+    background-position: center;
+    background-size: cover;
+  }
 }
