@@ -4,11 +4,17 @@ import "./Movies.css";
 export default class Movies extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = { video: true };
+    this.revealVideo = this.revealVideo.bind(this);
   }
+
+  revealVideo() {
+    this.setState({ video: !this.state.video });
+  }
+
   render() {
-    return (
-      <div className="Movies">
+    let movies = (
+      <span className="Movies">
         <h2 className="Movies-name">{this.props.name}</h2>
         <div className="Movies-info">
           {" "}
@@ -25,6 +31,23 @@ export default class Movies extends Component {
           <p>Budget: {this.props.budget} Million $</p>
           <p>Box-Office: {this.props.revenue} Million $</p>
         </div>
+      </span>
+    );
+
+    let video = (
+      <div className="Movies">
+        {" "}
+        <iframe
+          className="Movies-video"
+          src={`http://www.youtube.com/embed/${this.props.image}`}
+          allowFullScreen
+        ></iframe>
+      </div>
+    );
+
+    return (
+      <div onMouseEnter={this.revealVideo} onMouseLeave={this.revealVideo}>
+        {this.state.video ? movies : video}
       </div>
     );
   }
