@@ -1,0 +1,31 @@
+.Movies {
+  color: white;
+  width: 350px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #10141fd3;
+  padding: 5px;
+  border-radius: 5px;
+}
+.Movies-stars {
+  color: rgba(226, 169, 63, 0.9);
+  margin-bottom: 10px;
+}
+
+.Movies-name {
+  color: rgb(226, 169, 63);
+}
+
+.Movies-info {
+  text-align: center;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 250px;
+  height: 150px;
+  margin-top: 10px;
+}
