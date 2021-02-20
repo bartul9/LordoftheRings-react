@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import "./Home.css";
 import Container from "../Components/Container";
 import ring from "./ring.png";
+import BookContainer from "../Components/BookContainer";
+import AboutContainer from "../Components/AboutContainer";
+import SiteTitles from "../Components/SiteTitles";
 
 export default class Home extends Component {
   render() {
@@ -18,6 +21,10 @@ export default class Home extends Component {
             <img className="Home-ring-image rotate" src={ring} alt="" />
           </div>
         </header>
+        <AboutContainer />
+        <SiteTitles name={"Books"} />
+        <BookContainer />
+        <SiteTitles name={"Movies"} />
         <Container />
       </div>
     );
