@@ -35,14 +35,14 @@
   margin-top: 10px;
 }
 
-.Movies-video {
+/* .Movies-video {
   height: 250px;
   width: 350px;
   border: none;
 }
 .Movies-video:hover {
   cursor: pointer;
-}
+} */
 
 @media (max-width: 700px) {
   .Movies {
