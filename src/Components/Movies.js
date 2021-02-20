@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Movies.css";
+import ReactPlayer from "react-player";
 
 export default class Movies extends Component {
   constructor(props) {
@@ -37,11 +38,11 @@ export default class Movies extends Component {
     let video = (
       <div className="Movies">
         {" "}
-        <iframe
-          className="Movies-video"
-          src={`http://www.youtube.com/embed/${this.props.image}`}
-          allowFullScreen
-        ></iframe>
+        <ReactPlayer
+          width="350px"
+          height="250px"
+          url={`http://www.youtube.com/embed/${this.props.image}`}
+        />
       </div>
     );
 
