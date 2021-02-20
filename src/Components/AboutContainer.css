@@ -1,7 +1,11 @@
 .AboutContainer {
+  padding-top: 6vh;
   min-height: 100vh;
-  width: 100vw;
-  background-image: url(/src/Components/argonath.jpg);
+  background-image: url(/src/Components/argonath.png);
   background-size: cover;
-  background-position: left;
+  background-position: center;
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-color: #10141f;
+  font-style: italic;
 }
