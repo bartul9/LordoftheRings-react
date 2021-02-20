@@ -1,0 +1,18 @@
+.SiteTitles {
+  background-color: #10141f;
+  width: 100%;
+  color: white;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/src/Components/headingborder.png);
+  background-position: center;
+  background-size: 25%;
+  background-repeat: no-repeat;
+  font-style: italic;
+}
+
+.SiteTitles h2 {
+  margin: 0;
+}
