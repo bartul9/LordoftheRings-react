@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Message.css";
+import "./elvishdesign3.png";
 
 export default class Message extends Component {
   render() {
