@@ -1,0 +1,8 @@
+.Character {
+  background-color: #10141f;
+  height: 200vh;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
